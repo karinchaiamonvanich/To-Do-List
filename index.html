@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sparkle Tasks | Beautiful To-Do List</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-animation"></div>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-magic"></i> Sparkle Tasks</h1>
+            <p class="subtitle">Organize your day with elegance</p>
+        </header>
+        
+        <div class="input-container glassmorphism">
+            <input type="text" id="taskInput" placeholder="What needs to be done?">
+            <button id="addTaskBtn">
+                <i class="fas fa-plus"></i> Add
+            </button>
+        </div>
+        
+        <div class="filters glassmorphism">
+            <button class="filter-btn active" data-filter="all">
+                <i class="fas fa-list"></i> All
+            </button>
+            <button class="filter-btn" data-filter="active">
+                <i class="fas fa-spinner"></i> Active
+            </button>
+            <button class="filter-btn" data-filter="completed">
+                <i class="fas fa-check-circle"></i> Completed
+            </button>
+        </div>
+        
+        <div class="task-container glassmorphism">
+            <ul id="taskList">
+                <!-- Tasks will be added here dynamically -->
+            </ul>
+        </div>
+        
+        <div class="task-stats glassmorphism">
+            <span id="tasksLeft">0 tasks remaining</span>
+            <button id="clearCompleted">
+                <i class="fas fa-trash-alt"></i> Clear Completed
+            </button>
+        </div>
+    </div>
+    
+    <footer>
+        <p>Made with <i class="fas fa-heart"></i> for productive people</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
